@@ -5,9 +5,10 @@ Implementing basic load balancing using Nginx
 We are using Openresty (Nginx)
 
 1. Create 2 nodejs application
-2. Add create a .conf (example loadBal.conf) file for load balancing configuration
-3. Copy the loadBal.conf file in "Openresty/conf" folder.  
-4. In the same folder exists nginx.conf file, in this file at last line add statement to include the above .conf file, as shown below
+2. Create a .conf (example loadBal.conf) file for load balancing configuration
+    `loadBal.conf`
+3. Copy the `loadBal.conf` file in path `Openresty/conf` or `nginx\conf` folder.  
+4. In the same folder exists `nginx.conf` file, in this file at last line add statement to include the above .conf file, as shown below
 
 `include  load-balancer.conf;`
 
