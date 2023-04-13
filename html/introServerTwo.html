@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Application Two</title>
+    </head>    
+    <body>
+        <h1 style="color:brown;font-size: 60px;">Started the server 2</h1>
+        <div style="font-size: 50px;font-weight: bold;color: blueviolet;" id="container"></div>
+        
+        <script type="text/javascript">
+            (()=>{
+                 let date = new Date();
+                 let timeTxt = date.getTime();  
+                 document.getElementById("container").innerHTML = "<span>Current Time "+timeTxt+"</span>";
+            })();
+        </script>
+        
+    </body>
+</html>
