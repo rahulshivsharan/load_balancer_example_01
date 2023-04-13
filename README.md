@@ -6,8 +6,8 @@ We are using Openresty (Nginx)
 
 1. Create 2 nodejs application
 2. Create a .conf (example loadBal.conf) file for load balancing configuration
-    `loadBal.conf`
-3. Copy the `loadBal.conf` file in path `Openresty/conf` or `nginx\conf` folder.  
+    `load-balancer.conf`
+3. Copy the `load-balancer.conf` file in path `Openresty/conf` or `nginx/conf` folder.  
 4. In the same folder exists `nginx.conf` file, in this file at last line add statement to include the above .conf file, as shown below
 
 `include  load-balancer.conf;`
@@ -38,4 +38,12 @@ http://localhost:5002
 
 ```bash
 tasklist /fi "imagename eq nginx.exe"
+```
+
+9. the above command will list down process's with process Id's. Kill the process with below command
+
+The below example is for process Id 12616 
+
+```bash
+taskkill /pid 12616 /F
 ```
